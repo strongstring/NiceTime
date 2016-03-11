@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A544FA681C8F9A1E00C53189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544FA671C8F9A1E00C53189 /* AppDelegate.swift */; };
+		A544FA6A1C8F9A1E00C53189 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544FA691C8F9A1E00C53189 /* ViewController.swift */; };
+		A544FA6D1C8F9A1E00C53189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A544FA6B1C8F9A1E00C53189 /* Main.storyboard */; };
+		A544FA6F1C8F9A1E00C53189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A544FA6E1C8F9A1E00C53189 /* Assets.xcassets */; };
+		A544FA721C8F9A1E00C53189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A544FA701C8F9A1E00C53189 /* LaunchScreen.storyboard */; };
+		A544FA7D1C8F9A1E00C53189 /* NiceTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544FA7C1C8F9A1E00C53189 /* NiceTimeTests.swift */; };
+		A544FA881C8F9A1E00C53189 /* NiceTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544FA871C8F9A1E00C53189 /* NiceTimeUITests.swift */; };
+		A544FAB11C8FED6300C53189 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A544FAB01C8FED6300C53189 /* NotificationCenter.framework */; };
+		A544FAB41C8FED6300C53189 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544FAB31C8FED6300C53189 /* TodayViewController.swift */; };
+		A544FAB71C8FED6300C53189 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A544FAB51C8FED6300C53189 /* MainInterface.storyboard */; };
+		A544FABB1C8FED6300C53189 /* TimeChecker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A544FAAE1C8FED6300C53189 /* TimeChecker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A57A37801C9021440074E266 /* AppSingleToneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A377F1C9021440074E266 /* AppSingleToneModel.swift */; };
+		A57A37821C9021800074E266 /* DailyTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A37811C9021800074E266 /* DailyTime.swift */; };
+		A57A37911C904D470074E266 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A37901C904D470074E266 /* Util.swift */; };
+		A5AFE3691C91062500495097 /* DirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AFE3681C91062500495097 /* DirectoryManager.swift */; };
+		A5AFE36B1C91074400495097 /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AFE36A1C91074400495097 /* TimeManager.swift */; };
+		A5E478501C92680400788C5C /* ToWorkTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4784F1C92680400788C5C /* ToWorkTableCell.swift */; };
+		A5E478521C92680D00788C5C /* RestTimeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E478511C92680D00788C5C /* RestTimeTableCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A544FA791C8F9A1E00C53189 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A544FA5C1C8F9A1E00C53189 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A544FA631C8F9A1E00C53189;
+			remoteInfo = NiceTime;
+		};
+		A544FA841C8F9A1E00C53189 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A544FA5C1C8F9A1E00C53189 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A544FA631C8F9A1E00C53189;
+			remoteInfo = NiceTime;
+		};
+		A544FAB91C8FED6300C53189 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A544FA5C1C8F9A1E00C53189 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A544FAAD1C8FED6300C53189;
+			remoteInfo = TimeChecker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A544FABF1C8FED6300C53189 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A544FABB1C8FED6300C53189 /* TimeChecker.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A544FA641C8F9A1E00C53189 /* NiceTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiceTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A544FA671C8F9A1E00C53189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A544FA691C8F9A1E00C53189 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A544FA6C1C8F9A1E00C53189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A544FA6E1C8F9A1E00C53189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A544FA711C8F9A1E00C53189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A544FA731C8F9A1E00C53189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A544FA781C8F9A1E00C53189 /* NiceTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NiceTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A544FA7C1C8F9A1E00C53189 /* NiceTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceTimeTests.swift; sourceTree = "<group>"; };
+		A544FA7E1C8F9A1E00C53189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A544FA831C8F9A1E00C53189 /* NiceTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NiceTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A544FA871C8F9A1E00C53189 /* NiceTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceTimeUITests.swift; sourceTree = "<group>"; };
+		A544FA891C8F9A1E00C53189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A544FAAE1C8FED6300C53189 /* TimeChecker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TimeChecker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A544FAB01C8FED6300C53189 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		A544FAB31C8FED6300C53189 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		A544FAB61C8FED6300C53189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		A544FAB81C8FED6300C53189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A57A377F1C9021440074E266 /* AppSingleToneModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSingleToneModel.swift; sourceTree = "<group>"; };
+		A57A37811C9021800074E266 /* DailyTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyTime.swift; sourceTree = "<group>"; };
+		A57A37901C904D470074E266 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		A5AFE3681C91062500495097 /* DirectoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryManager.swift; sourceTree = "<group>"; };
+		A5AFE36A1C91074400495097 /* TimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
+		A5E4784F1C92680400788C5C /* ToWorkTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToWorkTableCell.swift; sourceTree = "<group>"; };
+		A5E478511C92680D00788C5C /* RestTimeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestTimeTableCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A544FA611C8F9A1E00C53189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A544FA751C8F9A1E00C53189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A544FA801C8F9A1E00C53189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A544FAAB1C8FED6300C53189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A544FAB11C8FED6300C53189 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A544FA5B1C8F9A1E00C53189 = {
+			isa = PBXGroup;
+			children = (
+				A544FA661C8F9A1E00C53189 /* NiceTime */,
+				A544FA7B1C8F9A1E00C53189 /* NiceTimeTests */,
+				A544FA861C8F9A1E00C53189 /* NiceTimeUITests */,
+				A544FAB21C8FED6300C53189 /* TimeChecker */,
+				A544FAAF1C8FED6300C53189 /* Frameworks */,
+				A544FA651C8F9A1E00C53189 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A544FA651C8F9A1E00C53189 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A544FA641C8F9A1E00C53189 /* NiceTime.app */,
+				A544FA781C8F9A1E00C53189 /* NiceTimeTests.xctest */,
+				A544FA831C8F9A1E00C53189 /* NiceTimeUITests.xctest */,
+				A544FAAE1C8FED6300C53189 /* TimeChecker.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A544FA661C8F9A1E00C53189 /* NiceTime */ = {
+			isa = PBXGroup;
+			children = (
+				A5AFE3671C9105EF00495097 /* common */,
+				A544FA671C8F9A1E00C53189 /* AppDelegate.swift */,
+				A544FA691C8F9A1E00C53189 /* ViewController.swift */,
+				A5E4784F1C92680400788C5C /* ToWorkTableCell.swift */,
+				A5E478511C92680D00788C5C /* RestTimeTableCell.swift */,
+				A544FA6B1C8F9A1E00C53189 /* Main.storyboard */,
+				A544FA6E1C8F9A1E00C53189 /* Assets.xcassets */,
+				A544FA701C8F9A1E00C53189 /* LaunchScreen.storyboard */,
+				A544FA731C8F9A1E00C53189 /* Info.plist */,
+			);
+			path = NiceTime;
+			sourceTree = "<group>";
+		};
+		A544FA7B1C8F9A1E00C53189 /* NiceTimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A544FA7C1C8F9A1E00C53189 /* NiceTimeTests.swift */,
+				A544FA7E1C8F9A1E00C53189 /* Info.plist */,
+			);
+			path = NiceTimeTests;
+			sourceTree = "<group>";
+		};
+		A544FA861C8F9A1E00C53189 /* NiceTimeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A544FA871C8F9A1E00C53189 /* NiceTimeUITests.swift */,
+				A544FA891C8F9A1E00C53189 /* Info.plist */,
+			);
+			path = NiceTimeUITests;
+			sourceTree = "<group>";
+		};
+		A544FAAF1C8FED6300C53189 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A544FAB01C8FED6300C53189 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A544FAB21C8FED6300C53189 /* TimeChecker */ = {
+			isa = PBXGroup;
+			children = (
+				A544FAB31C8FED6300C53189 /* TodayViewController.swift */,
+				A544FAB51C8FED6300C53189 /* MainInterface.storyboard */,
+				A544FAB81C8FED6300C53189 /* Info.plist */,
+			);
+			path = TimeChecker;
+			sourceTree = "<group>";
+		};
+		A5AFE3671C9105EF00495097 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				A57A377F1C9021440074E266 /* AppSingleToneModel.swift */,
+				A57A37811C9021800074E266 /* DailyTime.swift */,
+				A5AFE36A1C91074400495097 /* TimeManager.swift */,
+				A57A37901C904D470074E266 /* Util.swift */,
+				A5AFE3681C91062500495097 /* DirectoryManager.swift */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A544FA631C8F9A1E00C53189 /* NiceTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A544FA8C1C8F9A1E00C53189 /* Build configuration list for PBXNativeTarget "NiceTime" */;
+			buildPhases = (
+				A544FA601C8F9A1E00C53189 /* Sources */,
+				A544FA611C8F9A1E00C53189 /* Frameworks */,
+				A544FA621C8F9A1E00C53189 /* Resources */,
+				A544FABF1C8FED6300C53189 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A544FABA1C8FED6300C53189 /* PBXTargetDependency */,
+			);
+			name = NiceTime;
+			productName = NiceTime;
+			productReference = A544FA641C8F9A1E00C53189 /* NiceTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A544FA771C8F9A1E00C53189 /* NiceTimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A544FA8F1C8F9A1E00C53189 /* Build configuration list for PBXNativeTarget "NiceTimeTests" */;
+			buildPhases = (
+				A544FA741C8F9A1E00C53189 /* Sources */,
+				A544FA751C8F9A1E00C53189 /* Frameworks */,
+				A544FA761C8F9A1E00C53189 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A544FA7A1C8F9A1E00C53189 /* PBXTargetDependency */,
+			);
+			name = NiceTimeTests;
+			productName = NiceTimeTests;
+			productReference = A544FA781C8F9A1E00C53189 /* NiceTimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A544FA821C8F9A1E00C53189 /* NiceTimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A544FA921C8F9A1E00C53189 /* Build configuration list for PBXNativeTarget "NiceTimeUITests" */;
+			buildPhases = (
+				A544FA7F1C8F9A1E00C53189 /* Sources */,
+				A544FA801C8F9A1E00C53189 /* Frameworks */,
+				A544FA811C8F9A1E00C53189 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A544FA851C8F9A1E00C53189 /* PBXTargetDependency */,
+			);
+			name = NiceTimeUITests;
+			productName = NiceTimeUITests;
+			productReference = A544FA831C8F9A1E00C53189 /* NiceTimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A544FAAD1C8FED6300C53189 /* TimeChecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A544FABC1C8FED6300C53189 /* Build configuration list for PBXNativeTarget "TimeChecker" */;
+			buildPhases = (
+				A544FAAA1C8FED6300C53189 /* Sources */,
+				A544FAAB1C8FED6300C53189 /* Frameworks */,
+				A544FAAC1C8FED6300C53189 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeChecker;
+			productName = TimeChecker;
+			productReference = A544FAAE1C8FED6300C53189 /* TimeChecker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A544FA5C1C8F9A1E00C53189 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ss.strongstring;
+				TargetAttributes = {
+					A544FA631C8F9A1E00C53189 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					A544FA771C8F9A1E00C53189 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = A544FA631C8F9A1E00C53189;
+					};
+					A544FA821C8F9A1E00C53189 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = A544FA631C8F9A1E00C53189;
+					};
+					A544FAAD1C8FED6300C53189 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = A544FA5F1C8F9A1E00C53189 /* Build configuration list for PBXProject "NiceTime" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A544FA5B1C8F9A1E00C53189;
+			productRefGroup = A544FA651C8F9A1E00C53189 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A544FA631C8F9A1E00C53189 /* NiceTime */,
+				A544FA771C8F9A1E00C53189 /* NiceTimeTests */,
+				A544FA821C8F9A1E00C53189 /* NiceTimeUITests */,
+				A544FAAD1C8FED6300C53189 /* TimeChecker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A544FA621C8F9A1E00C53189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A544FA721C8F9A1E00C53189 /* LaunchScreen.storyboard in Resources */,
+				A544FA6F1C8F9A1E00C53189 /* Assets.xcassets in Resources */,
+				A544FA6D1C8F9A1E00C53189 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A544FA761C8F9A1E00C53189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A544FA811C8F9A1E00C53189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A544FAAC1C8FED6300C53189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A544FAB71C8FED6300C53189 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A544FA601C8F9A1E00C53189 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A57A37821C9021800074E266 /* DailyTime.swift in Sources */,
+				A57A37801C9021440074E266 /* AppSingleToneModel.swift in Sources */,
+				A5AFE36B1C91074400495097 /* TimeManager.swift in Sources */,
+				A57A37911C904D470074E266 /* Util.swift in Sources */,
+				A5AFE3691C91062500495097 /* DirectoryManager.swift in Sources */,
+				A5E478521C92680D00788C5C /* RestTimeTableCell.swift in Sources */,
+				A544FA6A1C8F9A1E00C53189 /* ViewController.swift in Sources */,
+				A5E478501C92680400788C5C /* ToWorkTableCell.swift in Sources */,
+				A544FA681C8F9A1E00C53189 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A544FA741C8F9A1E00C53189 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A544FA7D1C8F9A1E00C53189 /* NiceTimeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A544FA7F1C8F9A1E00C53189 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A544FA881C8F9A1E00C53189 /* NiceTimeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A544FAAA1C8FED6300C53189 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A544FAB41C8FED6300C53189 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A544FA7A1C8F9A1E00C53189 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A544FA631C8F9A1E00C53189 /* NiceTime */;
+			targetProxy = A544FA791C8F9A1E00C53189 /* PBXContainerItemProxy */;
+		};
+		A544FA851C8F9A1E00C53189 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A544FA631C8F9A1E00C53189 /* NiceTime */;
+			targetProxy = A544FA841C8F9A1E00C53189 /* PBXContainerItemProxy */;
+		};
+		A544FABA1C8FED6300C53189 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A544FAAD1C8FED6300C53189 /* TimeChecker */;
+			targetProxy = A544FAB91C8FED6300C53189 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A544FA6B1C8F9A1E00C53189 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A544FA6C1C8F9A1E00C53189 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A544FA701C8F9A1E00C53189 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A544FA711C8F9A1E00C53189 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A544FAB51C8FED6300C53189 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A544FAB61C8FED6300C53189 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A544FA8A1C8F9A1E00C53189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A544FA8B1C8F9A1E00C53189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A544FA8D1C8F9A1E00C53189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = NiceTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.strongstring.NiceTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A544FA8E1C8F9A1E00C53189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = NiceTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.strongstring.NiceTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A544FA901C8F9A1E00C53189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NiceTimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.strongstring.NiceTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NiceTime.app/NiceTime";
+			};
+			name = Debug;
+		};
+		A544FA911C8F9A1E00C53189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NiceTimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.strongstring.NiceTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NiceTime.app/NiceTime";
+			};
+			name = Release;
+		};
+		A544FA931C8F9A1E00C53189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NiceTimeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.strongstring.NiceTimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NiceTime;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A544FA941C8F9A1E00C53189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NiceTimeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.strongstring.NiceTimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NiceTime;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		A544FABD1C8FED6300C53189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TimeChecker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.strongstring.NiceTime.TimeChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A544FABE1C8FED6300C53189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TimeChecker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.strongstring.NiceTime.TimeChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A544FA5F1C8F9A1E00C53189 /* Build configuration list for PBXProject "NiceTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A544FA8A1C8F9A1E00C53189 /* Debug */,
+				A544FA8B1C8F9A1E00C53189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A544FA8C1C8F9A1E00C53189 /* Build configuration list for PBXNativeTarget "NiceTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A544FA8D1C8F9A1E00C53189 /* Debug */,
+				A544FA8E1C8F9A1E00C53189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A544FA8F1C8F9A1E00C53189 /* Build configuration list for PBXNativeTarget "NiceTimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A544FA901C8F9A1E00C53189 /* Debug */,
+				A544FA911C8F9A1E00C53189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A544FA921C8F9A1E00C53189 /* Build configuration list for PBXNativeTarget "NiceTimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A544FA931C8F9A1E00C53189 /* Debug */,
+				A544FA941C8F9A1E00C53189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A544FABC1C8FED6300C53189 /* Build configuration list for PBXNativeTarget "TimeChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A544FABD1C8FED6300C53189 /* Debug */,
+				A544FABE1C8FED6300C53189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A544FA5C1C8F9A1E00C53189 /* Project object */;
+}
